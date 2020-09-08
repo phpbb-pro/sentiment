@@ -1,0 +1,30 @@
+{
+    "name": "senky/sentiment",
+    "type": "phpbb-extension",
+    "description": "",
+    "homepage": "",
+    "version": "1.0.0-dev",
+    "time": "2020-09-08",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Jakub Senko",
+            "email": "senky@phpbb.pro",
+            "homepage": "https://phpbb.pro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Sentiment",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3.0,<3.4.0@dev"
+        }
+    },
+    "require-dev": {
+        "phing/phing": "2.4.*"
+    }
+}

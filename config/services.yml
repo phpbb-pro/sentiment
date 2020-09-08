@@ -1,0 +1,16 @@
+services:
+    senky.sentiment.listener:
+        class: senky\sentiment\event\main_listener
+        arguments:
+            - '@language'
+        tags:
+            - { name: event.listener }
+
+    senky.sentiment.cron.task.sample:
+        class: senky\sentiment\cron\task\sample
+        arguments:
+            - '@config'
+        calls:
+            - [set_name, [senky.sentiment.cron.task.sample]]
+        tags:
+            - { name: cron.task }
